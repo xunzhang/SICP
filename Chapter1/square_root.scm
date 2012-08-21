@@ -1,6 +1,4 @@
 ; square_root.scm
-; Usage: (sqrt-loop 1 2)
-; Notice: init guess can not be 0
 
 ; define square
 (define square (lambda (x) (* x x)))
@@ -26,3 +24,6 @@
       G 
       (sqrt-loop (improve G X) X))))
 
+(define hand_sqrt
+  (lambda (x) 
+    (sqrt-loop 1 x)))
